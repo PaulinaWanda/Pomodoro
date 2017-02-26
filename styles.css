@@ -1,0 +1,107 @@
+body {
+    background-image: -webkit-radial-gradient(circle, #dddddd, #444444);
+    background-image: radial-gradient(circle, #dddddd, #444444);
+    color: #222222;
+    font-family: "Bungee", cursive;
+}
+.pomodoro {
+    margin: 10% auto;
+    width: 90%;
+}
+.timers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 85px;
+}
+.title {
+    margin: auto;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.title:first-of-type {
+    text-shadow: 1px 1px 1px red;
+}
+.title:nth-of-type(2){
+    text-shadow: 1px 1px 1px green;
+}
+.title, .set-time {
+    cursor: default;
+}
+.timer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 20%;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.minus, .plus {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+.minus:hover, .plus:hover {
+    color: #000000;
+}
+.timer-container:first-of-type button:hover {
+    text-shadow: 1px 1px 1px red;
+}
+.timer-container:nth-of-type(2) button:hover {
+    text-shadow: 1px 1px 1px green;
+}
+.minus:active, .plus:active {
+    -webkit-transform: translate(1px, 1px) scale(1.1);
+    transform: translate(1px, 1px) scale(1.1);
+}
+
+.countdown {
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+    width: 200px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 45px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background: none;
+    display: block;
+}
+.countdown:hover {
+    box-shadow: 2px 2px 3px blue;
+    text-shadow: 2px 2px 3px blue;
+}
+.countdown:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.color-line {
+    height: 5px;
+    margin: 30px 0;
+    background-color: #000000;
+}
+.color-line:first-child {
+    box-shadow: 1px 1px 2px red;
+    width: 100%;
+}
+.color-line:nth-child(2) {
+    box-shadow: 1px 1px 2px green;
+    width: 20%;
+}

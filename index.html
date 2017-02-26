@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class='pomodoro'>
+        <div class='timers'>
+            <h3 class="title">Set session time</h3>
+            <div class='timer-container'>
+                <button class="minus">-</button>
+                <div id="work" class="set-time">25</div>
+                <button class="plus">+</button>
+            </div>
+            <h3 class="title">Set break time</h3>
+            <div class='timer-container'>
+                <button class="minus">-</button>
+                <div id="break" class="set-time">5</div>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <button id="countdown" class="countdown"></button>
+        <div>
+            <div id='work-line' class='color-line'></div>
+            <div id='break-line' class="color-line"></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
